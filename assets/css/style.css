@@ -1,24 +1,24 @@
-.container {
-  margin: auto;
-  width: 100%;
-  height: 100px;
+header {
+  padding: 30px;
+  background-color: bisque;
   text-align: center;
 }
 
-.welcome {
-  margin-bottom: 20px;
-}
-
-#main {
-  margin-bottom: 20px;
-  font-size: 100px;
-  width: 100%;
-  height: 25px;
-}
-
-#read {
-  margin: auto;
+h1 {
   padding: 10px;
-  width: 100%;
-  height: 25px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+section {
+  padding: 40px;
+  border: blue 2px solid;
+}
+
+button {
+  padding: 6px;
 }
