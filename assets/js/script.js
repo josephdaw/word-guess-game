@@ -1,5 +1,6 @@
 var timerEl = document.getElementById('countdown');
 var startEl = document.getElementById('start');
+var wordEl = document.getElementById('word');
 
 startEl.addEventListener("click", function() {
   countdown();
@@ -38,7 +39,12 @@ document.addEventListener('keydown', function (event) {
       console.log("match")
       // add the key to revealedLetters[i]
       revealedLetters[i] = key;
+      revealLetters();
 
     }
   }
 });
+
+function revealLetters() {
+  wordEl.textContent = revealedLetters.join(" ");
+}
